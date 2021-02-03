@@ -1,0 +1,8 @@
+/Cake
+/tmp
+/Test
+/Config/database.php
+/Config/core.php
+/nbproject
+.DS_Store
+Thumbs.db

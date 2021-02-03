@@ -1,0 +1,74 @@
+ErrorDocument 404 /
+ErrorDocument 500 /
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^3ajeel.com$
+RewriteRule (.*) http://www.3ajeel.com/$1 [R=301,L] 
+#Redirect 301 / http://3ajeel.com/
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^$ webroot/ [L]
+	RewriteRule (.*) webroot/$1 [L]
+</IfModule>
+
+
+########## Begin - Optimal default expiration time
+## Note: this might cause problems and you might have to comment it out by
+## placing a hash in front of this section's lines
+<IfModule mod_expires.c>
+# Enable expiration control
+ExpiresActive On
+ 
+# Default expiration: 1 hour after request
+ExpiresDefault "access plus 1 hour"
+ 
+# CSS and JS expiration: 1 week after request
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType application/x-javascript "access plus 1 year"
+
+ 
+# Image files expiration: 1 year after request
+ExpiresByType image/bmp "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/jp2 "access plus 1 year"
+ExpiresByType image/pipeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType image/tiff "access plus 1 year"
+ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType image/ico "access plus 1 year"
+ExpiresByType image/icon "access plus 1 year"
+ExpiresByType text/ico "access plus 1 year"
+ExpiresByType application/ico "access plus 1 year"
+ExpiresByType image/vnd.wap.wbmp "access plus 1 year"
+ExpiresByType application/vnd.wap.wbxml "access plus 1 year"
+ExpiresByType application/smil "access plus 1 year"
+ 
+# Audio files expiration: 1 month after request
+ExpiresByType audio/basic "access plus 1 year"
+ExpiresByType audio/mid "access plus 1 year"
+ExpiresByType audio/midi "access plus 1 year"
+ExpiresByType audio/mpeg "access plus 1 year"
+ExpiresByType audio/x-aiff "access plus 1 year"
+ExpiresByType audio/x-mpegurl "access plus 1 year"
+ExpiresByType audio/x-pn-realaudio "access plus 1 year"
+ExpiresByType audio/x-wav "access plus 1 year"
+ 
+# Movie files expiration: 1 month after request
+ExpiresByType application/x-shockwave-flash "access plus 1 year"
+ExpiresByType x-world/x-vrml "access plus 1 year"
+ExpiresByType video/x-msvideo "access plus 1 year"
+ExpiresByType video/mpeg "access plus 1 year"
+ExpiresByType video/mp4 "access plus 1 year"
+ExpiresByType video/quicktime "access plus 1 year"
+ExpiresByType video/x-la-asf "access plus 1 year"
+ExpiresByType video/x-ms-asf "access plus 1 year"
+</IfModule>
+
+########## End - Optimal expiration time

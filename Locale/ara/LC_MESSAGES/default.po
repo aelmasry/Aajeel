@@ -1,0 +1,266 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-01-18 15:33+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "Home page"
+msgstr "الصفحة الرئيسية"
+
+msgid "3ajeel"
+msgstr "عاجل"
+
+msgid "ajeel"
+msgstr "موقع عاجل"
+
+msgid "3ajeel_home"
+msgstr "عاجل اخر الاخبار"
+
+msgid "news"
+msgstr "أخبار "
+
+msgid "about page title"
+msgstr "عن موقع عاجل"
+
+msgid "cpanel"
+msgstr "لوحة التحكم"
+
+msgid "keywords"
+msgstr "عاجل , أخبار عاجلة ، لحظة بلحظة ، أحدث الاخبار ، أخر الاخبار"
+
+msgid "description"
+msgstr "موقع "عاجل" يجمع لك كل المواقع في موقع واحد ليضعك بصورة آخر الأخبار لحظة بلحظة."
+
+msgid "Read more"
+msgstr "إقرأ المزيد"
+
+msgid "share news by"
+msgstr "شارك الخبر :"
+
+msgid "search box"
+msgstr "كلمة البحث"
+
+msgid "search"
+msgstr "بحث"
+
+msgid "Most popular"
+msgstr "الأكثر شهرة"
+
+msgid "just now"
+msgstr "الأن"
+
+msgid "ago"
+msgstr "منذ"
+
+msgid "later"
+msgstr "فيما بعد"
+
+msgid "second"
+msgstr "ثانية"
+
+msgid "seconds"
+msgstr "منذ %s ثانية"
+
+msgid "minute"
+msgstr "منذ %d دقيقة"
+
+msgid "minutes"
+msgstr "دقائق"
+
+msgid "May"
+msgstr "مايو"
+
+msgid "hour"
+msgstr "منذ %s ساعة"
+
+msgid "hours"
+msgstr "ساعات"
+
+msgid "Share"
+msgstr "المشاركة"
+
+msgid "More"
+msgstr "المزيد"
+
+msgid "categories"
+msgstr "الاقسام"
+
+msgid "Edit Category"
+msgstr "تعديل القسم"
+
+msgid "Add Category"
+msgstr "إضافـة قسم"
+
+msgid "List Categories"
+msgstr "قائمة الاقسام"
+
+msgid "Countries"
+msgstr "الدول"
+
+msgid "countries"
+msgstr "الدول"
+
+msgid "List Countries"
+msgstr "قائمة الدول"
+
+msgid "sources"
+msgstr "المصادر"
+
+msgid "source"
+msgstr "المصدر"
+
+msgid "List Sources"
+msgstr "قائمة المصادر"
+
+msgid "Add source"
+msgstr "مصدر جديد"
+
+msgid "RSS URL"
+msgstr "List RSS"
+
+msgid "Users"
+msgstr "المستخدمين"
+
+msgid "UnPublish"
+msgstr "غير منشور"
+
+msgid "Publish"
+msgstr "منشور"
+
+msgid "Created"
+msgstr "انشاء"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Edit"
+msgstr "تعديل"
+
+msgid "link"
+msgstr "الرابط"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "New country"
+msgstr "إضافة دولة"
+
+msgid "country"
+msgstr "الدولة"
+
+msgid "Country"
+msgstr "الدولة"
+
+msgid "copyright"
+msgstr " جميع حقوق النشر محفوظة لمصادر الاخبار المذكورة وتتحمل هذه المصادرة المسؤليه كامله عن صحه الاخبار "
+
+msgid "About 3ajeel"
+msgstr "عن عاجل"
+
+msgid "contact us"
+msgstr "إتصل بنا"
+
+msgid "terms"
+msgstr "شروط الاستخدام"
+
+msgid "Are you sure you want to delete # %s?"
+msgstr "هل أنت متأكد أنك تريد حذف # %s ?"
+
+msgid "search results"
+msgstr "نتائج البحث عن :"
+
+msgid "bad link"
+msgstr "عفواً يبدو أنك اتبعت رابط غير صحيح"
+
+msgid "sername or password is incorrect"
+msgstr "اسم المستخدم أو كلمة المرور غير صحيحة"
+
+msgid "sername or password is incorrect"
+msgstr "اسم المستخدم أو كلمة المرور غير صحيحة"
+
+### Admin translate
+
+msgid "Edit country"
+msgstr "تعديل اسم الدولة"
+
+msgid "Add country"
+msgstr "إضافة دولة"
+
+msgid "Alias"
+msgstr "اسم مستعار"
+
+msgid "Status"
+msgstr "منشور"
+
+msgid "No"
+msgstr "لا"
+
+msgid "Yes"
+msgstr "نعم"
+
+msgid "State"
+msgstr "حالة"
+
+msgid "List Rss"
+msgstr "روابط ال RSS"
+
+msgid "New Sources Rss"
+msgstr "اضافة رابط RSS"
+
+msgid "List countries"
+msgstr "قائمة الدول"
+
+msgid "Add Source"
+msgstr "اضافة مصدر"
+
+msgid "Edit Source"
+msgstr "تعديل المصدر"
+
+msgid "Save"
+msgstr "حفظ"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+msgid "Logo"
+msgstr "شعار الموقع"
+
+msgid "The category has been saved."
+msgstr "تم اضافة دولة جديدة"
+
+msgid "Saved successfully"
+msgstr "تم الحفظ  بنجاح"
+
+msgid "save error, Please try again."
+msgstr "حفظ خطأ، يرجى المحاولة مرة أخرى."
+
+msgid "You are not authorized to access that location."
+msgstr "لا يحق لك الوصول إلى هذا الموقع."
+
+msgid "Invalid source"
+msgstr "مصدر غير صالحة."
+
+msgid "Username or password is incorrect"
+msgstr "اسم المستخدم أو كلمة المرور غير صحيحة."
+
+msgid "The tag has been saved."
+msgstr "تم حفظ هذا الوسم بنجاح."
+
+msgid "New Tag"
+msgstr "وسم جديد"

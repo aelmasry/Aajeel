@@ -1,0 +1,873 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+h1,h2,h3,h4,h5,h6 {
+    font-family:"Droid Arabic Kufi",Arial,sans-serif;
+}
+body {
+    background: #eaeaea;
+    font-family: "Droid Arabic Naskh",Arial,sans-serif;
+}
+.tab-bar.TopBarStyle {
+    position:fixed;
+    top:0;
+    right:0;
+    background: #469BD5;
+    border-bottom:1px solid #9a9a9a;
+    height: 145px;
+}
+.right-small.MenuStyle {
+    height: 100%;
+    border-left: 1px solid #79b0d5;
+    box-shadow: 0 0 0 #79b0d5 !important;
+    /*position: relative;*/
+    float:right;
+    z-index: 998;
+}
+.main-section {
+    margin-top:160px;
+}
+.right-off-canvas-menu.SideMenu {
+    background: #469BD5;
+}
+ul.off-canvas-list li a {
+    border-bottom: 1px solid #79b0d5 !important;
+    color:rgba(234,234,234,1) !important; 
+}
+#HeaderLogo {
+    font-family: "Droid Arabic Kufi",Arial,sans-serif;
+    font-size:28px;
+    margin-left:5px;
+}
+.LogoWrap {
+    background: #FFFFFF;
+    height: 100px;
+    padding: 5px 0;
+}
+.HeaderBigLogo {
+    /*  margin-top: 8px;
+      width: 250px;*/
+}
+.TopAd {
+    border: 1px solid #000000;
+    height: 90px;
+    width: 728px;
+    color:#000000;
+    text-align: center;
+}
+#HeaderLogoSmall {
+    font-size:25px;
+    font-weight: bold;
+    color: #fff;
+    font-family:"Droid Arabic Kufi",Arial,sans-serif;
+    margin-right: 50px;
+    margin-top:2px;
+}
+.MainNav {
+    list-style: none;
+    padding: 0;
+}
+.MainNav li {
+    float:right;
+    border-left: 1px solid #79B0D5;
+}
+.MainNav li:first-of-type {
+    border-right: 1px solid #79B0D5;
+}
+.MainNav li:hover {
+    background: #3b84b5;
+}
+.MainNav li a {
+    font-family: "Droid Arabic Kufi",Arial,sans-serif;
+    font-size:20px;
+    color:rgba(234,234,234,1);
+    padding:6px 10px;
+    display:block;
+}
+.MainNav li a h1{
+    height: 40px;
+    margin-top: -7px;
+}
+.Search {
+    background: url('../img/IconSet.png') no-repeat;
+    background-position: -154px -2px;
+    width:36px;
+    height: 36px;
+    display: block;
+    margin-top:4px;
+    margin-left:3px;
+    overflow:hidden;
+    text-indent: -9999px;
+}
+.Search:hover {
+    background-position: -193px -2px;
+}
+/*.NewsBox {
+        margin-bottom:15px;
+}*/
+.NewsWrap {
+    background: #ffffff;
+    width: 98%;
+    margin:0px auto;
+    padding:10px 0;
+    border-left:1px solid #e2e2e2;
+    border-bottom:1px solid #e2e2e2;
+}
+.NewsDate, .ShareTitle {
+    float:right;
+    padding: 11px 5px;
+    border-right: 3px solid #B80202;
+    background: #f6f6f6;
+    color:#9d9d9d;
+    font-size:14px;
+    margin-bottom: 10px;
+}
+.ShareTitle {
+    padding: 6px 5px;
+    line-height: 24px;
+    margin-top:15px;
+    margin-left: 5px;
+
+}
+.NewsDate h1{
+    display: inline;
+    font-size:14px;
+    /*color:#2ba6cb;*/
+}
+.NewsDate h3{
+    display: inline;
+    font-size:14px;
+    color:#9d9d9d;
+}
+#ShareModal {
+    padding-left:0;
+    padding-right:0;
+    padding-bottom: 5px;
+}
+.ShareBox {
+    margin-top: 15px;
+    border-top:1px solid #e2e2e2;
+    padding-top:3px;
+}
+.SharingIcon {
+    float:right;
+    display:block;
+    width:59px;
+    height:59px;
+    background: url('../img/ShareIcon.png') no-repeat;
+    margin:2px 4px;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+.FB {
+    background-position: -272px 0;
+}
+.TW {
+    background-position: -204px 0;
+}
+.GP {
+    background-position: -136px 0;
+}
+.IN {
+    background-position: -68px 0;
+}
+.Mail {
+    background-position: 0 0;
+}
+.ActionIcons {
+    float:left;
+    padding: 5px;
+    border-left: 3px solid #B80202;
+    background: #f6f6f6;
+    color:#9d9d9d;
+    margin-bottom: 10px;
+}
+.ShareIcon {
+    float:left;
+    display:block;
+    width:22px;
+    height:22px;
+    background: url('../img/IconSet.png') no-repeat;
+    background-position: -4px -9px;
+    margin:2px 4px;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+.AgancyImg {
+    width:50px;
+    height: 50px;
+    float:right;
+    margin: 0 8px;
+    border:1px solid #eaeaea; 
+    overflow:hidden;
+}
+.AgancyImg img {
+    width:100%;
+    height: 100%;
+} 
+.NewsTitle h1 {
+    font-size:18px;
+    margin-left:10px;
+    padding-right:66px;
+    color: #424242;
+}
+.NewsTitle h2 {
+    font-size:18px;
+    margin-left:10px;
+    padding-right:66px;
+    color: #424242;
+}
+.NewsTitle h3 {
+    font-size:18px;
+    margin-left:10px;
+    padding-right:66px;
+    color: #424242;
+}
+.NewsDesc {
+    color:#999999;
+    margin: 10px 66px 10px 10px;
+    font-size: 16px; 
+    text-align: justify;
+}
+.SeeMoreBtn {
+    float:left;
+    display:block;
+    width:24px;
+    height:14px;
+    background: url('../img/IconSet.png') no-repeat;
+    background-position: -121px -13px;
+    margin:26px 10px 10px;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+.SeeMoreBtn.ActiveBtn {
+    background-position: -81px -13px;
+}
+.readMoreBtn {
+    float:right;
+    margin:8px ;
+    padding:7px 14px;
+    color:#ffffff;
+    background: #469BD5;
+    border-right:3px solid #3677A4;
+    border-bottom:3px solid #3677A4;
+    font-family:"Droid Arabic Kufi",Arial,sans-serif;;
+}
+.readMoreBtn:hover {
+    color: #E2E2E2;
+}
+.readMoreBtn:active {
+    border-right:3px solid #469BD5;
+    border-bottom:3px solid #469BD5;
+}
+.TrendsBox {
+    background: #ffffff;
+    width: 98%;
+    margin:0px auto;
+    padding:0 0 10px 0;
+    border-left:1px solid #e2e2e2;
+    border-bottom:1px solid #e2e2e2;
+}
+.TrendsTitle {
+    padding: 5px;
+    border-right: 3px solid #B80202;
+    background: #f6f6f6;
+    color:#9d9d9d;
+}
+.TrendsTitle h3 {
+    font-size:18px;
+    font-weight:bold;
+    color:#9D9D9D;
+}
+.Trends {
+    padding:8px 3px;
+}
+.TrendEntry {
+    display:inline-block;
+    padding:5px;
+    margin:5px;
+    background: #F6F6F6;
+    text-decoration: none;
+    color:#424242;
+    font-size:14px;
+
+}
+footer {
+    padding:10px 0;
+    margin: 10px auto;
+    border-top:1px solid #bfbfbf;
+    font-size:14px;
+}
+footer nav{
+    text-align:center;
+}
+footer nav .footerLink {
+    display:inline-block;
+    padding:5px;
+    color:#B80202
+}
+.footerLink.middleLink {
+    border-right: 1px solid #B80202;
+    border-left: 1px solid #B80202;
+}
+footer p {
+    text-align: center;
+    color: #B80202;
+    margin-top:10px;
+    font-size:14px;
+}
+.SearchBar {
+    background:#FFFFFF;
+    height:43px !important;
+    padding:5px;
+    padding-right:46px !important;
+    border:0;
+    font-family: "Droid Arabic Kufi",Arial,sans-serif !important;
+    font-size:20px !important;
+    color:#B80202 !important;
+}
+.SearchBox {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 999;
+    width:100%;
+    padding-right:168px;
+}
+
+.topRow {
+    position: relative;
+}
+.searchIcon {
+    background: url('../img/IconSet.png') no-repeat;
+    background-position: -232px -2px;
+    width:36px;
+    height: 36px;
+    display: block;
+    margin-top:4px;
+    margin-left:3px;
+    overflow:hidden;
+    text-indent: -9999px;
+    position: absolute;
+    top:0;
+    right:172px;
+    /*z-index: 9999;*/
+}
+.AdsBox {
+    background: #bfbfbf;
+    height: 370px;
+    width:98%;
+    margin: 15px auto;
+    text-align:center;
+    line-height: 60px;
+}
+.ResultBox {
+    background: #F6F6F6;
+    padding:5px 48px 5px 5px;
+    border-right:3px solid #B80202;
+    position: relative;
+    margin: 0 auto 15px auto;
+    width: 98%;
+}
+.ResultBox .searchIcon {
+    right:7px;
+}
+.ResultBox p {
+    margin-bottom:5px;
+    margin-top:5px;
+    color:#BFBFBF;
+}
+.ResultBox .ResultTitle {
+    color:#B80202;
+    font-family: "Droid Arabic Kufi",Arial,sans-serif !important;
+    font-size:18px;
+
+}
+.iframeBar {
+    width:100%;
+}
+.IframeBarWrap {
+    padding: 0;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 64em) { 
+    .SearchBox {
+        padding-right:0;
+    }
+    .searchIcon{
+        right:4px;
+    }
+    .tab-bar.TopBarStyle  {
+        height:45px;
+    }
+    .main-section {
+        margin-top:60px;
+    }
+}
+
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+.BigLoadMore {
+    display: inline-block !important;
+    float: none !important;
+    background: #F9F9F9 !important;
+    color: #999 !important;
+    padding: 10px 30px !important;
+    border-color: #999 !important;
+}
+.LoadMoreWrap {
+    text-align:center;
+    margin:5px 0;
+}
+#pbd-alp-load-posts a:link, #pbd-alp-load-posts a:visited {
+    display: block;
+    text-align: center;
+    padding: 4px 0;
+    color: #444;
+    text-decoration: none;
+
+    /** Rounded Corners **/
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    /** Drop shadow **/
+    -moz-box-shadow: 1px 1px 1px #999;
+    -webkit-box-shadow: 1px 1px 1px #999;
+    box-shadow: 1px 1px 1px #999;
+
+    /** Gradients : http://css-tricks.com/css3-gradients/ */
+    /* fallback */
+    background-color: #f1f1f1;
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #e4e3e3, #f1f1f1);
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f1), to(#e4e3e3));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#f1f1f1, #e4e3e3);
+
+    /* Opera 11.10+ */ background: -o-linear-gradient(#f1f1f1, #e4e3e3);
+}
+
+#pbd-alp-load-posts a:hover, #pbd-alp-load-posts a:active {
+    /** Drop shadow **/
+    -moz-box-shadow: 1px 1px 1px #bbb;
+    -webkit-box-shadow: 1px 1px 1px #bbb;
+    box-shadow: 1px 1px 1px #bbb;
+
+    /** Gradients : http://css-tricks.com/css3-gradients/ */
+    /* fallback */
+    background-color: #f5f5f5;
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #eaeaea, #f5f5f5);
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5f5f5), to(#eaeaea));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#f1f1f1, #eaeaea);
+
+    /* Opera 11.10+ */ background: -o-linear-gradient(#f5f5f5, #eaeaea);
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('../img/socicon/socicon.eot');
+    src: url('../img/socicon/socicon.eot?#iefix') format('embedded-opentype'),
+        url('../img/socicon/socicon.woff') format('woff'),
+        url('../img/socicon/socicon.ttf') format('truetype'),
+        url('../img/socicon/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../img/socicon/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin-right:15px; 
+    margin-bottom:10px; 
+    padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    -o-transition:.1s; -ms-transition:.1s; -moz-transition:.1s; -webkit-transition:.1s; transition:.1s; -webkit-transition-property: transform; transition-property: transform; -webkit-transform: translateZ(0); transform: translateZ(0);
+
+    /*overflow:hidden;*/
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 26px;
+    /*    -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;*/
+    margin-right: 12px;
+    color: #ffffff;
+    background-color: none;
+}
+/*.soc a:hover { z-index: 2; -webkit-transform: scale(1.1); transform: scale(1.1); }*/
+
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'a';
+}
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-facebook:before {
+    content:'b';
+}
+.soc-google {
+    background-color: #d93e2d;
+}
+.soc-google:before {
+    content:'c';
+}
+.soc-rss {
+    background-color: #f26109;
+}
+.soc-rss:before {
+    content:',';
+}
+
+DIV.fullpage {
+    padding: 20px 20px;
+}
+.rsspage ul li {
+    background: none repeat scroll 0 0 #fafafa;
+    font-family: "Droid Arabic Kufi",Arial,sans-serif;
+    font-size: 17px;
+    height: 33px;
+    list-style: outside none none !important;
+    margin-bottom: 1px;
+    margin-right: 0;
+    padding-bottom: 37px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.rsspage ul li div.addToSites {
+    float: left;
+}
+.rsspage ul li:hover a {
+    color: #c50000;
+}
+.fullpage ul li {
+    clear: both;
+    margin-bottom: 10px;
+    padding-left : 10px;
+    padding-right: 10px;
+}
+.dropdown-menu {
+	position: absolute;
+    top: 70%;
+    z-index: 1000;
+    display: none;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: #469bd5;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	text-align:right;
+}
+
+.dropdown-menu ol:hover {
+	background: #3b84b5;
+}
+div#content {
+    color:#999999;
+    margin: 10px 66px 10px 15px;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 14px; 
+/*    padding: 10px;
+    text-align: justify;
+*/
+}
