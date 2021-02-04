@@ -1,3 +1,0 @@
-ALTER TABLE `sources` ADD COLUMN `metakey` VARCHAR(255) NULL DEFAULT NULL AFTER `alias`;
-ALTER TABLE `sources` ADD COLUMN `metadesc` TEXT NULL DEFAULT NULL AFTER `metakey`;
-ALTER TABLE `sources` DROP COLUMN `hashtag`;
